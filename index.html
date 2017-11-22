@@ -14,31 +14,33 @@
 		</div>
 		<div class="player-playlist">
 			<ul class="list" id="video-list">
-				<li class="list-child"><a href="javascript:void(0);" onclick="changeSource('02')">Play PHP is next video</a></li>
-				<li class="list-child"><a href="javascript:void(0);" onclick="changeSource('03')">Play PHP another video </a></li>
+				<li class="list-child"><a href="javascript:void(0);" onclick="changeSource('02')"><b>Play</b> PHP is next video</a></li>
+				<li class="list-child"><a href="javascript:void(0);" onclick="changeSource('03')"><b>Play</b> PHP another video </a></li>
 			</ul>
 		</div>
 	</div>
 
 	<script type="text/javascript">
+		// this scan the source
 		function changeSource(x)
 		{
+			// this check the source arg
 			if(x == '02'){
 				var video = document.getElementById('video');
 				var videoList = document.getElementById('video-list');
-				video.pause();
-				video.src = "files/02.mp4";
-				video.load();
-				video.play();
+				video.pause(); // stop current 
+				video.src = "files/02.mp4"; // set next file
+				video.load(); // load the file on the video source
+				video.play(); // play on the run
 			}else{
 				if(x == '03'){
 					var video = document.getElementById('video');
-					video.pause();
-					video.src = "files/03.mp4";
-					video.load();
-					video.play();
+					video.pause(); // same as above
+					video.src = "files/03.mp4"; // same as above
+					video.load(); // same
+					video.play(); // same
 				}else{
-					alert('not found !')	
+					alert('not found !') // secure the js arg	
 				}
 			}			
 		}
