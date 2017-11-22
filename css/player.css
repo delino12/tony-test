@@ -1,0 +1,19 @@
+.list {
+	text-decoration: none;
+	list-style: none;
+	padding: 0.5em;	
+	font-family: tahoma;
+}
+
+a {
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 10px;
+}
+
+.player-wrapper {
+	border-radius: 4px;
+	border:1px solid #999;
+	padding: 0.3em;
+	width: 255px;
+}
