@@ -16,4 +16,6 @@ a {
 	border:1px solid #999;
 	padding: 0.3em;
 	width: 255px;
+	background-color: #000;
+	color: #fff;
 }

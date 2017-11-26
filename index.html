@@ -27,8 +27,48 @@
 					<td>
 						<a href="javascript:void(0);" onclick="changeSource('03')">
 							<div>
-								<video id="video" poster="img/03.jpg" width="120" height="140">
-										<source src="files/02.mp4" type="video/mp4">
+								<video id="video" poster="img/03.jpeg" width="120" height="140">
+										<source src="files/03.mp4" type="video/mp4">
+								</video>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="javascript:void(0);" onclick="changeSource('04')">
+							<div>
+								<video id="video" poster="img/04.jpeg" width="120" height="140">
+										<source src="files/04.mp4" type="video/mp4">
+								</video>
+							</div>
+						</a>
+					</td>
+					<td>
+						<a href="javascript:void(0);" onclick="changeSource('05')">
+							<div>
+								<video id="video" poster="img/05.jpeg" width="120" height="140">
+										<source src="files/05.mp4" type="video/mp4">
+								</video>
+							</div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="javascript:void(0);" onclick="changeSource('06')">
+							<div>
+								<video id="video" poster="img/06.jpeg" width="120" height="140">
+										<source src="files/06.mp4" type="video/mp4">
+								</video>
+							</div>
+						</a>
+					</td>
+					<td>
+						<a href="javascript:void(0);" onclick="changeSource('07')">
+							<div>
+								<video id="video" poster="img/07.jpeg" width="120" height="140">
+										<source src="files/07.mp4" type="video/mp4">
 								</video>
 							</div>
 						</a>
@@ -50,17 +90,65 @@
 				video.src = "files/02.mp4"; // set next file
 				video.load(); // load the file on the video source
 				video.play(); // play on the run
+
+				return false;
+			}
+
+			if(x == '03'){
+				var video = document.getElementById('video');
+				video.pause(); // same as above
+				video.src = "files/03.mp4"; // same as above
+				video.load(); // same
+				video.play(); // same
+
+				return false;
+			}
+
+
+
+			if(x == '04'){
+				var video = document.getElementById('video');
+				video.pause(); // same as above
+				video.src = "files/04.mp4"; // same as above
+				video.load(); // same
+				video.play(); // same
+				return false;
+			}
+
+
+
+
+			if(x == '05'){
+				var video = document.getElementById('video');
+				video.pause(); // same as above
+				video.src = "files/05.mp4"; // same as above
+				video.load(); // same
+				video.play(); // same
+				return false;
+			}
+
+
+
+			if(x == '06'){
+				var video = document.getElementById('video');
+				video.pause(); // same as above
+				video.src = "files/06.mp4"; // same as above
+				video.load(); // same
+				video.play(); // same
+				return false;
+			}
+
+
+			if(x == '07'){
+				var video = document.getElementById('video');
+				video.pause(); // same as above
+				video.src = "files/07.mp4"; // same as above
+				video.load(); // same
+				video.play(); // same
+				return false;
 			}else{
-				if(x == '03'){
-					var video = document.getElementById('video');
-					video.pause(); // same as above
-					video.src = "files/03.mp4"; // same as above
-					video.load(); // same
-					video.play(); // same
-				}else{
-					alert('not found !') // secure the js arg	
-				}
-			}			
+				alert('not found !') // secure the js arg	
+			}		
 		}
 	</script>
 </body>
